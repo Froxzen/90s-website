@@ -1,4 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #03076e;
+}
+
+.header {
+    text-align: center;
+    padding-top: 2rem;
 }
