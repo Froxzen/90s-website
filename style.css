@@ -1,10 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    background-color: #03076e;
+	margin: 0;
+	padding: 0;
+	background-color: #03076e;
+}
+
+.container {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.coin {
+	margin-right: 1rem;
+	max-width: 3%;
 }
 
 .header {
-    text-align: center;
-    padding-top: 2rem;
+	font-family: "Press Start 2P", system-ui;
+	color: rgb(243, 232, 232);
 }
