@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Lessons</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<section class="home-page">
+			<a href="index.html"
+				><div class="container">
+					<img
+						src="images/coin-cropped.png"
+						alt="coin"
+						class="coin"
+					/>
+					<h1 class="header">Codédex</h1>
+				</div>
+			</a>
+			<nav class="navbar">
+				<ul>
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#tags">HTML Tags</a></li>
+					<li><a href="#structure">Structure</a></li>
+					<li><a href="#attributes">Attributes</a></li>
+					<li><a href="#style">Styling</a></li>
+				</ul>
+			</nav>
+			<div class="content-container">
+				<section id="intro" class="lesson-section">
+					<h2 class="lesson-title">Introduction to HTML</h2>
+					<p class="lesson-text">
+						HTML, or Hypertext Markup Language, is the standard
+						markup language used to create and structure web pages.
+						It provides the basic building blocks for creating the
+						content, layout, and structure of a website. HTML is the
+						backbone of web development and is essential for
+						creating structured content on the internet.
+					</p>
+					<p class="lesson-text">
+						HTML is made up of elements called "tags", which define
+						different types of content, such as headings,
+						paragraphs, images, and links. These tags are read by
+						web browsers to render the web page accordingly. HTML,
+						when paired with CSS and JavaScript, allows developers
+						to create fully functional and interactive websites.
+					</p>
+				</section>
+				<section id="tags" class="lesson-section">
+					<h2 class="lesson-title">HTML Tags</h2>
+					<p class="lesson-text">
+						HTML uses a system of tags to define the different
+						elements on a web page. These tags are enclosed in angle
+						brackets, like <code>&lt;html&gt;</code>, and tell the
+						browser how to display the content. There are two main
+						types of tags:
+					</p>
+					<ul class="lesson-list">
+						<li class="lesson-list-element">
+							<strong>Opening tags:</strong> Define the start of
+							an element (e.g., <code>&lt;div&gt;</code>).
+						</li>
+						<li class="lesson-list-element">
+							<strong>Closing tags:</strong> Define the end of an
+							element (e.g., <code>&lt;/div&gt;</code>).
+						</li>
+					</ul>
+					<p class="lesson-text">
+						Tags can also have attributes that provide additional
+						information about the element. For example, the
+						<code>&lt;a&gt;</code> tag is used to define hyperlinks,
+						and its <code>href</code> attribute specifies the URL of
+						the link.
+					</p>
+				</section>
+				<section id="structure" class="lesson-section">
+					<h2 class="lesson-title">HTML Structure</h2>
+					<p class="lesson-text">
+						Every HTML document has a basic structure, including the
+						<code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+						and <code>&lt;body&gt;</code> tags. The
+						<code>&lt;html&gt;</code> tag wraps the entire HTML
+						document, while the <code>&lt;head&gt;</code> section
+						contains metadata about the page, such as the title and
+						link to external resources (like stylesheets or
+						scripts).
+					</p>
+					<p class="lesson-text">
+						The <code>&lt;body&gt;</code> section holds the visible
+						content of the page, such as text, images, and links.
+						Properly structuring your HTML ensures that the browser
+						can render the page as expected and that users can
+						navigate it efficiently.
+					</p>
+					<p class="lesson-text">
+						Here's an example of a simple HTML structure:
+					</p>
+					<pre class="code-example">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Web Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;p&gt;This is a simple webpage.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre
+					>
+				</section>
+				<section id="attributes" class="lesson-section">
+					<h2 class="lesson-title">HTML Attributes</h2>
+					<p class="lesson-text">
+						Attributes provide additional information about an HTML
+						element. They are placed inside the opening tag and can
+						be used to customize the behavior or appearance of an
+						element. Common attributes include <code>src</code>,
+						<code>href</code>, and <code>alt</code>.
+					</p>
+					<p class="lesson-text">
+						For example, the <code>&lt;img&gt;</code> tag uses the
+						<code>src</code> attribute to specify the image file
+						source, and the <code>alt</code> attribute provides an
+						alternative text description of the image, which is
+						important for accessibility.
+					</p>
+					<p class="lesson-text">Example:</p>
+					<pre class="code-example">
+&lt;img src="image.jpg" alt="A description of the image"&gt;</pre
+					>
+					<p class="lesson-text">
+						Attributes are key to making your elements function
+						properly and ensuring that they meet web standards.
+					</p>
+				</section>
+				<section id="style" class="lesson-section">
+					<h2 class="lesson-title">Styling HTML with CSS</h2>
+					<p class="lesson-text">
+						While HTML provides the structure and content of a web
+						page, Cascading Style Sheets (CSS) are used to control
+						the visual presentation and styling. CSS allows you to
+						specify colors, fonts, layouts, and other design
+						elements for your HTML elements. By separating structure
+						and style, CSS makes it easier to maintain and update
+						websites.
+					</p>
+					<p class="lesson-text">
+						You can apply CSS in three ways: inline, internal, and
+						external. External stylesheets are generally the best
+						approach as they allow you to keep styles separate from
+						the content.
+					</p>
+					<p class="lesson-text">Example of an internal CSS style:</p>
+					<pre class="code-example">
+&lt;style&gt;
+    h1 {
+        color: blue;
+        font-size: 36px;
+    }
+&lt;/style&gt;</pre
+					>
+					<p class="lesson-text">
+						This will change the color and size of all
+						<code>&lt;h1&gt;</code> elements on the page. CSS gives
+						you the power to design beautiful websites and create a
+						great user experience.
+					</p>
+				</section>
+			</div>
+		</section>
+	</body>
+</html>

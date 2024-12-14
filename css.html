@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Lessons</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <section class="home-page">
+        <a href="index.html">
+            <div class="container">
+                <img src="images/coin-cropped.png" alt="coin" class="coin" />
+                <h1 class="header">Codédex</h1>
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#syntax">CSS Syntax</a></li>
+                <li><a href="#selectors">Selectors</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#example">Example</a></li>
+            </ul>
+        </nav>
+        <div class="content-container">
+            <section id="intro" class="lesson-section">
+                <h2 class="lesson-title">Introduction to CSS</h2>
+                <p class="lesson-text">
+                    CSS, or Cascading Style Sheets, is a stylesheet language used to describe the presentation of a document written in HTML. CSS defines how HTML elements should be displayed on the screen, paper, or other media.
+                </p>
+                <p class="lesson-text">
+                    CSS is one of the core languages of the web and is used to control the layout of multiple web pages all at once. By using CSS, you can improve the visual appearance of your web pages and enhance user experience.
+                </p>
+            </section>
+            <section id="syntax" class="lesson-section">
+                <h2 class="lesson-title">CSS Syntax</h2>
+                <p class="lesson-text">
+                    CSS syntax is composed of a set of rules. Each rule or rule-set consists of one or more selectors, and a declaration block. The selector points to the HTML element you want to style.
+                </p>
+                <p class="lesson-text">
+                    The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon.
+                </p>
+                <p class="lesson-text">Example of CSS syntax:</p>
+                <pre class="code-example">
+selector {
+    property: value;
+}</pre>
+            </section>
+            <section id="selectors" class="lesson-section">
+                <h2 class="lesson-title">CSS Selectors</h2>
+                <p class="lesson-text">
+                    CSS selectors are used to "find" (or select) the HTML elements you want to style. We can divide CSS selectors into five categories:
+                </p>
+                <ul class="lesson-list">
+                    <li class="lesson-list-element">
+                        <strong>Simple selectors:</strong> Select elements based on name, id, class.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>Combinator selectors:</strong> Select elements based on a specific relationship between them.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>Pseudo-class selectors:</strong> Select elements based on a certain state.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>Pseudo-element selectors:</strong> Select and style parts of an element.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>Attribute selectors:</strong> Select elements based on an attribute or attribute value.
+                    </li>
+                </ul>
+            </section>
+            <section id="properties" class="lesson-section">
+                <h2 class="lesson-title">CSS Properties</h2>
+                <p class="lesson-text">
+                    CSS properties are used to style HTML elements. Each property has a value which specifies the style to be applied to the element. Common properties include:
+                </p>
+                <ul class="lesson-list">
+                    <li class="lesson-list-element">
+                        <strong>color:</strong> Specifies the color of the text.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>font-size:</strong> Specifies the size of the text.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>margin:</strong> Specifies the space around elements.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>padding:</strong> Specifies the space inside elements.
+                    </li>
+                    <li class="lesson-list-element">
+                        <strong>border:</strong> Specifies the border around elements.
+                    </li>
+                </ul>
+                <p class="lesson-text">
+                    Understanding how to use these properties allows you to control the layout and design of your web pages effectively.
+                </p>
+            </section>
+            <section id="example" class="lesson-section">
+                <h2 class="lesson-title">CSS Example</h2>
+                <p class="lesson-text">
+                    Here is an example of how you can use CSS to style an HTML document:
+                </p>
+                <pre class="code-example">
+/* CSS */
+body {
+    background-color: #001f3f; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+h1 {
+    color: #ffcc00; /* Yellow title color */
+    font-size: 36px; /* Font size */
+}
+
+p {
+    margin: 20px 0; /* Margin */
+}</pre>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
