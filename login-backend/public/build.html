@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Codédex | Build</title>
+	</head>
+	<body class="build-body">
+		<section class="build-container">
+			<a href="index.html"
+				><div class="container">
+					<img
+						src="images/coin-cropped.png"
+						alt="coin"
+						class="coin"
+					/>
+					<h1 class="header">Codédex</h1>
+				</div>
+			</a>
+			<nav class="navbar">
+				<ul>
+					<li class="dropdown">
+						<a href="#learn" class="dropbtn">Learn &#9662;</a>
+						<div class="dropdown-content">
+							<a href="html.html">HTML</a>
+							<a href="css.html">CSS</a>
+						</div>
+					</li>
+					<li><a href="practice.html">Practice</a></li>
+					<li><a href="build.html">Build</a></li>
+					<li><a href="community-webpages/community-home.html">Community</a></li>
+					<li><a href="join-club.html">Join Club</a></li>
+				</ul>
+			</nav>
+			<div class="editor">
+				<div class="left">
+					<label>HTML</label>
+					<textarea onkeyup="run()" id="html-code" spellcheck="false"></textarea>
+					<label>CSS</label>
+					<textarea onkeyup="run()" id="css-code" spellcheck="false"></textarea>
+				</div>
+				<div class="right">
+					<label>Output</label>
+					<iframe id="output"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="courses"></section>
+	</body>
+	<script src="script.js"></script>
+</html>
