@@ -366,9 +366,8 @@ i {
 	border: none;
 	color: white;
 	font-weight: 900;
-	border-radius: 30px;
 	width: 8vw;
-	height: 4vw;
+	height: 3.5vw;
 	margin-left: auto;
     cursor: pointer;
 }
@@ -462,13 +461,11 @@ i {
 	align-items: center;
 	margin-bottom: 15px;
 	padding: 12px;
-	border-radius: 8px;
 }
 
 .event .date {
 	background-color: #3f51b5;
 	padding: 8px 12px;
-	border-radius: 5px;
 	margin-right: 20px;
 	font-weight: bold;
     line-height: 1.4;
