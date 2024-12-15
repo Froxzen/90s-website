@@ -1,20 +1,31 @@
-document.addEventListener("DOMContentLoaded", () => {
-	// Wait for 2 seconds before removing the preloader
-	setTimeout(() => {
-		// Get the preloader element
-		const preloader = document.getElementById("preloader");
-		const spinner = document.getElementById("spinner");
+function run() {
+	let htmlCode = document.getElementById("html-code").value;
+	let cssCode = document.getElementById("css-code").value;
+	let output = document.getElementById("output");
+	output.contentDocument.body.innerHTML =
+		htmlCode + "<style>" + cssCode + "</style>";
+}
 
-		preloader.remove();
-		spinner.remove();
+document.getElementById("learnButton").addEventListener("click", function () {
+	var userName = document.getElementById("name").value;
 
-		// Show the homepage
-		const homepage = document.querySelector(".home-page");
-		if (homepage) {
-			homepage.style.display = "block";
-		}
+	if (userName.trim() !== "") {
+		document.getElementById("welcome-screen").style.display = "block";
+		document.getElementById("user-name").textContent = userName;
 
-		// Allow scrolling
-		document.body.classList.remove("hidden");
-	}, 2000); // 2 seconds
+		document.getElementById("loginForm").style.display = "none";
+
+		setTimeout(function () {
+			window.location.href = "html.html";
+		}, 3000); 
+	} else {
+		document.getElementById("welcome-screen").style.display = "block";
+		document.getElementById("user-name").textContent = "Guest";
+
+		document.getElementById("loginForm").style.display = "none";
+
+		setTimeout(function () {
+			window.location.href = "html.html";
+		}, 3000); // 2-second delay
+	}
 });
