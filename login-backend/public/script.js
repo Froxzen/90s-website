@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				const result = await response.json();
 
 				if (response.ok) {
-					alert(result.message);
 				} else {
 					alert(result.message);
 				}
@@ -51,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				const result = await response.json();
 
 				if (response.ok) {
-					alert(result.message);
 					window.location.href = result.redirectUrl; // Redirect to the specified URL
 				} else {
 					alert(result.message);
