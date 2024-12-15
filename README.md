@@ -1,7 +1,7 @@
 # Codédex 1990s Style
 This project was made for the Codédex Holiday Hackathon 2024!
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/Octocat.png)
+![Codedex](public/images/Codedex.png)
 
 ## Features
 - HTML and CSS Lessons
