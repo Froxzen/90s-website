@@ -5,13 +5,11 @@ const bcrypt = require("bcryptjs");
 const app = express();
 const port = 3000;
 
-// In-memory database
 const users = {};
 
 app.use(bodyParser.json());
-app.use(express.static("public")); // Serve static files from the 'public' directory
+app.use(express.static("public"));
 
-// Register endpoint
 app.post("/register", async (req, res) => {
 	const { email, password } = req.body;
 	const hashedPassword = await bcrypt.hash(password, 10);
@@ -28,7 +26,6 @@ app.post("/register", async (req, res) => {
 	});
 });
 
-// Login endpoint
 app.post("/login", async (req, res) => {
 	const { email, password } = req.body;
 	const user = users[email];

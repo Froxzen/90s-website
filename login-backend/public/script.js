@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (signupForm) {
 		signupForm.addEventListener("submit", async function (event) {
-			event.preventDefault(); // Prevent the form from submitting the traditional way
+			event.preventDefault();
 
 			const email = document.getElementById("email").value;
 			const password = document.getElementById("password").value;
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				const result = await response.json();
 
 				if (response.ok) {
-					window.location.href = result.redirectUrl; // Redirect to the specified URL
+					window.location.href = result.redirectUrl;
 				} else {
 					alert(result.message);
 				}
