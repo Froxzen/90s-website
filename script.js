@@ -17,7 +17,7 @@ document.getElementById("learnButton").addEventListener("click", function () {
 
 		setTimeout(function () {
 			window.location.href = "html.html";
-		}, 3000); 
+		}, 3000);
 	} else {
 		document.getElementById("welcome-screen").style.display = "block";
 		document.getElementById("user-name").textContent = "Guest";
