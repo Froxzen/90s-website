@@ -288,7 +288,6 @@ iframe {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .sideBarOption,
@@ -308,7 +307,6 @@ i {
 	flex: 0.2;
 	min-width: 26vw;
 	margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .feed {
@@ -436,7 +434,6 @@ i {
 	margin-left: 8vw;
 	padding: 20px;
 	border-radius: 8px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .widget-container h1 {
@@ -465,7 +462,6 @@ i {
 	margin-bottom: 15px;
 	padding: 12px;
 	border-radius: 8px;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .event .date {
