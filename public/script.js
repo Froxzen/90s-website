@@ -26,6 +26,6 @@ document.getElementById("learnButton").addEventListener("click", function () {
 
 		setTimeout(function () {
 			window.location.href = "html.html";
-		}, 3000); // 2-second delay
+		}, 3000);
 	}
 });
