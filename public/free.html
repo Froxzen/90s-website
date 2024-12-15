@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Surprise!</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				font-family: "Press Start 2P", cursive;
+				background-color: #03076e;
+			}
+			.surprise-message {
+				max-width: 60%;
+				text-align: center;
+				font-size: 2.5vw;
+				color: rgb(0, 204, 255);
+				line-height: 1.4;
+			}
+			.surprise {
+				color: #fad503;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="surprise-message surprise">
+			<p class="surprise">Surprise! It's free!</p>
+			<p>Redirecting you back to the join club page</p>
+			<div class="dots">
+                <span class="dot">.</span>
+                <span class="dot">.</span>
+                <span class="dot">.</span>
+            </div>
+		</div>
+
+		<script>
+			setTimeout(function () {
+				window.location.href = "join-club.html";
+			}, 3000);
+		</script>
+	</body>
+</html>

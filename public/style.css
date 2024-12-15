@@ -709,8 +709,9 @@ i {
     left: 50%; 
     transform: translate(-50%, -50%);
     color: white;
+	width: 80%;
     padding: 20px;
-    font-size: 2vw;
+    font-size: 1.8vw;
     z-index: 9999;
 	text-align: center;
 	margin-top: 3vw;
